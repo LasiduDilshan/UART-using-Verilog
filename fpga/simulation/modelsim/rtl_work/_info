@@ -1,0 +1,106 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\HP\Desktop\_Sem 4\2_Electronic Circuit Design\FPGA\_Final_\fpga_2\simulation\modelsim
+vbaudrate
+IVQz6<@6K42L5UIa>5W3hX1
+VcX5k`]7eZ3P5kAPjZ<SlU0
+Z1 dC:\Users\HP\Desktop\_Sem 4\2_Electronic Circuit Design\FPGA\_Final_\fpga_2\simulation\modelsim
+w1715110295
+8C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/baudrate.v
+FC:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/baudrate.v
+L0 6
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2} -O0
+!i10b 1
+!s100 GkB9M=]mleX>a2I50T?8C3
+!s85 0
+!s108 1715139833.879000
+!s107 C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/baudrate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2|C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/baudrate.v|
+!s101 -O0
+vreceiver
+!i10b 1
+!s100 3Xe4;b2[>UBYLG;0z^:<m2
+Ie=J9]c`98:jDaO?eGM`1W0
+V7CVGU;95SgIF9mY2JgVPz3
+R1
+w1715110594
+8C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/receiver.v
+FC:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/receiver.v
+L0 6
+R2
+r1
+!s85 0
+31
+!s108 1715139834.074000
+!s107 C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/receiver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2|C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/receiver.v|
+!s101 -O0
+R3
+R4
+vtransmitter
+I;^Q`6e=I;nQejS77W<>Z<2
+V_MS`4DjI=Vke=HXjAl=jz3
+R1
+w1715110445
+8C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/transmitter.v
+FC:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/transmitter.v
+L0 6
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 UHHHKD9oHV0gf[eci@W1j0
+!s85 0
+!s108 1715139834.023000
+!s107 C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/transmitter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2|C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/transmitter.v|
+!s101 -O0
+vuart
+I53]D2`M<QfRLgWQRW4kce1
+VMVNL[@dFnI<fN@?NmBC]33
+R1
+w1715110990
+8C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart.v
+FC:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart.v
+L0 6
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 `_WgX6mjmQd9eLHjAG@bH3
+!s85 0
+!s108 1715139833.977000
+!s107 C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2|C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart.v|
+!s101 -O0
+vuart_TB
+IBRj6:<d6em@m?Do_9<G^W1
+V<f6=3SOjej=FGA8b:KRhY0
+R1
+w1715111857
+8C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v
+FC:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v
+L0 9
+R2
+r1
+31
+R3
+R4
+nuart_@t@b
+!i10b 1
+!s100 7PgNS3XNA;bB2h8:FP;ln2
+!s85 0
+!s108 1715139833.925000
+!s107 C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2|C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v|
+!s101 -O0

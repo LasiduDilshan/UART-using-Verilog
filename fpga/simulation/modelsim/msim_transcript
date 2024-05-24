@@ -1,0 +1,98 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do uart_tx_rx_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/_Final_/fpga_2 {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/baudrate.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module baudrate
+# 
+# Top level modules:
+# 	baudrate
+# vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/_Final_/fpga_2 {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart_TB
+# 
+# Top level modules:
+# 	uart_TB
+# vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/_Final_/fpga_2 {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart
+# 
+# Top level modules:
+# 	uart
+# vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/_Final_/fpga_2 {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/transmitter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module transmitter
+# 
+# Top level modules:
+# 	transmitter
+# vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/_Final_/fpga_2 {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/receiver.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# 
+vsim work.uart_TB
+# vsim work.uart_TB 
+# Loading work.uart_TB
+# Loading work.uart
+# Loading work.baudrate
+# Loading work.transmitter
+# Loading work.receiver
+# ** Warning: (vsim-3017) C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v(38): [TFMPC] - Too few port connections. Expected 13, found 10.
+# 
+#         Region: /uart_TB/test_uart
+# ** Warning: (vsim-3722) C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v(38): [TFMPC] - Missing connection for port 'clear'.
+# 
+# ** Warning: (vsim-3722) C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v(38): [TFMPC] - Missing connection for port 'LEDR'.
+# 
+# ** Warning: (vsim-3722) C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v(38): [TFMPC] - Missing connection for port 'Tx2'.
+# 
+add wave -position end  sim:/uart_TB/ready_clr
+add wave -position end  sim:/uart_TB/ready
+add wave -position end  sim:/uart_TB/loopback
+add wave -position end  sim:/uart_TB/enable
+add wave -position end  sim:/uart_TB/data
+add wave -position end  sim:/uart_TB/clk
+add wave -position end  sim:/uart_TB/Tx_busy
+add wave -position end  sim:/uart_TB/Rx_en
+add wave -position end  sim:/uart_TB/Rx_data
+run
+# FAIL: rx data 00 does not match tx 01
+# ** Note: $finish    : C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v(64)
+#    Time: 18149 ps  Iteration: 0  Instance: /uart_TB
+# 1
+# Break in Module uart_TB at C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v line 64
+run
+# FAIL: rx data 01 does not match tx 02
+# ** Note: $finish    : C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v(64)
+#    Time: 35537 ps  Iteration: 0  Instance: /uart_TB
+# 1
+# Break in Module uart_TB at C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v line 64
+run
+# SUCCESS: all bytes verified
+# ** Note: $finish    : C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v(69)
+#    Time: 44231 ps  Iteration: 0  Instance: /uart_TB
+# 1
+# Break in Module uart_TB at C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v line 69
+run
+# FAIL: rx data 02 does not match tx 03
+# ** Note: $finish    : C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v(64)
+#    Time: 52871 ps  Iteration: 0  Instance: /uart_TB
+# 1
+# Break in Module uart_TB at C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v line 64
+run
+# FAIL: rx data 03 does not match tx 04
+# ** Note: $finish    : C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v(64)
+#    Time: 70259 ps  Iteration: 0  Instance: /uart_TB
+# 1
+# Break in Module uart_TB at C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Final_/fpga_2/uart_TB.v line 64

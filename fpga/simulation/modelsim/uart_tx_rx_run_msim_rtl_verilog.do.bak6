@@ -1,0 +1,13 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/fpga_1 {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/fpga_1/baudrate.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/fpga_1 {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/fpga_1/uart_TB.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/fpga_1 {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/fpga_1/uart.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/fpga_1 {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/fpga_1/transmitter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/fpga_1 {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/fpga_1/receiver.v}
+
