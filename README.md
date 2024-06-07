@@ -144,7 +144,7 @@ In the future, we plan to expand this project by:
 
 By following these steps, you can successfully simulate, implement, and test the UART communication project using Quartus II (or Quartus Prime) and ModelSim. This guide provides a structured approach to help you understand the process of synthesizing and simulating Verilog circuits effectively.
 
-For further clarifications, you can refer to the provided "step by step guidance.pdf".
+For further clarifications, you can refer to the provided "Step by Step Implementation.docx" (https://github.com/LasiduDilshan/UART-using-Verilog/blob/main/Step%20by%20Step%20Implementation.docx).
 
 ## License
 
