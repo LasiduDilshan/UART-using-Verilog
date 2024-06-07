@@ -69,7 +69,6 @@ cd uart-verilog
 
 Use a Verilog simulation tool like ModelSim or VCS to run the uart_TB.v testbench and verify the UART functionality. The following commands are used to compile and simulate the testbench:
 
-bash
 Copy code
 vlog uart_TB.v
 vsim uart_TB
@@ -78,7 +77,74 @@ vsim uart_TB
 
 Use a waveform viewer to inspect the signals and ensure that the transmitted data matches the received data. This can be done within your simulation tool by viewing the generated waveform files.
 
-## Full guidance for implementation
+## Full Guidance for Implementation
+
+This section provides a detailed step-by-step guide for simulating, implementing, and testing the UART communication project using Quartus II (or Quartus Prime) and ModelSim. If you are already familiar with Verilog simulation and synthesis platforms, you may skip this section.
+
+### Software Installation
+
+Before you begin, ensure that you have installed the following software:
+
+- Quartus II or Quartus Prime
+- ModelSim
+ 
+### Steps for Implementation
+
+1. **Clone the Repository:**
+
+First, clone this repository to your local machine and extract the contents.
+
+Copy code
+git clone https://github.com/LasiduDilshan/UART-using-Verilog.git
+cd UART-using-Verilog
+
+2. **Open the Project File:**
+
+In the extracted folder, you will find a file named uart_tx_rx.qpf. Open this file in Quartus II or Quartus Prime.
+
+3. **Navigate to Files:**
+
+In Quartus, go to the "Files" section. You will see synthesis files and testbenches listed there.
+
+4. **Synthesize the Circuit:**
+
+You can synthesize the circuits for transmitter.v, receiver.v, baudrate.v, and uart.v. Below is the process for synthesizing the circuit for transmitter.v. You can follow similar steps for the other files.
+
+**Synthesizing Transmitter Circuit:**
+
+- **Add File**: Ensure transmitter.v is added to your project. If it is not, right-click in the "Files" window and add transmitter.v.
+- **Analyze and Synthesize**: Right-click on transmitter.v and select "Start" > "Analysis & Synthesis". Quartus will analyze the Verilog code and synthesize the circuit.
+- **Compile Design**: Once synthesis is complete, right-click the project name and select "Start Compilation". This process will compile the entire project, including the synthesized transmitter circuit.
+- **Check for Errors**: After compilation, check the message window for any errors or warnings. Resolve any issues that arise during this process.
+
+5. **Simulate with ModelSim:**
+
+- **Launch ModelSim**: Open ModelSim and set up a new project.
+- **Add Files**: Add the necessary Verilog files (transmitter.v, receiver.v, baudrate.v, uart.v, and uart_TB.v) to the ModelSim project.
+- **Compile Files**: Compile all the added Verilog files to ensure there are no syntax errors.
+- **Run Simulation**: Load the uart_TB testbench and run the simulation. Use the waveform viewer to inspect the signals and verify that the transmitted data matches the received data.
+
+6. **Review Results:**
+
+- **Waveform Analysis**: Use ModelSim's waveform viewer to analyze the simulation results. Ensure the transmitted data is correctly received without errors.
+- **Adjustments**: If necessary, make adjustments to the Verilog code and re-run the synthesis and simulation steps until the desired results are achieved.
+
+7. **Implement on FPGA:**
+
+- Compile the uart.v file in Quartus II.
+- Go to "Program Device" and select the corresponding FPGA (e.g., EP4CE22F17).
+- Upload the code to the FPGA and test it using the inbuilt LEDs. Ensure the pin assignments are correct based on the chosen FPGA. (For EP4CE22F17, refer to the datasheet for pin assignments.)
+
+### Future Work
+
+In the future, we plan to expand this project by:
+
+- Modifying codes and adding more testbenches.
+- Implementing the UART communication on seven-segment displays.
+
+By following these steps, you can successfully simulate, implement, and test the UART communication project using Quartus II (or Quartus Prime) and ModelSim. This guide provides a structured approach to help you understand the process of synthesizing and simulating Verilog circuits effectively.
+
+For further clarifications, you can refer to the provided "step by step guidance.pdf".
 
 ## License
 
