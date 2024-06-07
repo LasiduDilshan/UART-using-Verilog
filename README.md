@@ -1,5 +1,32 @@
 # UART Communication in Verilog
 
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Files](#files)
+    - [transmitter.v](#transmiterv)
+    - [receiver.v](#receiverv)
+        - [Upsampling Mechanism](#upsampling-mechanism)
+    - [baudrate.v](#baudratev)
+    - [uart.v](#uartv)
+    - [uart_TB.v (Testbench)](#uart_tbv-testbench)
+3. [How to Use](#how-to-use)
+4. [Full Guidance for Implementation](#full-guidance-for-implementation)
+    - [Software Installation](#software-installation)
+    - [Steps for Implementation](#steps-for-implementation)
+        - [Clone the Repository](#clone-the-repository)
+        - [Open the Project File](#open-the-project-file)
+        - [Navigate to Files](#navigate-to-files)
+        - [Synthesize the Circuit](#synthesize-the-circuit)
+            - [Synthesizing Transmitter Circuit](#synthesizing-transmitter-circuit)
+        - [Simulate with ModelSim](#simulate-with-modelsim)
+        - [Review Results](#review-results)
+        - [Implement on FPGA](#implement-on-fpga)
+5. [Future Work](#future-work)
+6. [License](#license)
+7. [Contributing](#contributing)
+8. [Contact](#contact)
+
 This repository contains Verilog code for implementing UART (Universal Asynchronous Receiver/Transmitter) communication. The project includes modules for the transmitter, receiver, baud rate generator, and a top-level UART module. Additionally, a testbench is provided to verify the functionality of the UART communication system.
 
 ## Overview
