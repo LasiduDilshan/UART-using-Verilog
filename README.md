@@ -167,7 +167,7 @@ You can synthesize the circuits for transmitter.v, receiver.v, baudrate.v, and u
 In the future, we plan to expand this project by:
 
 - Modifying codes and adding more testbenches.
-- Implementing the UART communication on seven-segment displays. (Already available in UART using verilog with FPGA 2nd)
+- Implementing the UART communication on seven-segment displays. (Already available in [UART using verilog with FPGA 2nd](https://github.com/LasiduDilshan/UART-using-Verilog/tree/main/UART%20using%20verilog%20with%20FPGA%202nd))
 
 By following these steps, you can successfully simulate, implement, and test the UART communication project using Quartus II (or Quartus Prime) and ModelSim. This guide provides a structured approach to help you understand the process of synthesizing and simulating Verilog circuits effectively.
 
