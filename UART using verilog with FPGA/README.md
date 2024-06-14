@@ -1,0 +1,1 @@
+UART functionality can only be tested using the built-in LEDs of the FPGA. For implementation with three seven-segment displays, refer to:  https://github.com/LasiduDilshan/UART-using-Verilog/tree/main/UART%20using%20verilog%20with%20FPGA%202nd 
