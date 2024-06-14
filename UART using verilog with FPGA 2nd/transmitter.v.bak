@@ -1,0 +1,61 @@
+module transmitter(	input wire [7:0] data_in, //input data as an 8-bit regsiter/vector 
+							input wire wr_en, //enable wire to start 
+							input wire clk_50m,
+							input wire clken, //clock signal for the transmitter
+							output reg Tx, //a single 1-bit register variable to hold transmitting bit
+							output wire Tx_busy //transmitter is busy signal 
+							);
+
+initial begin
+	 Tx = 1'b1; //initialize Tx = 1 to begin the transmission 
+end
+//Define the 4 states using 00,01,10,11 signals
+parameter TX_STATE_IDLE	= 2'b00;
+parameter TX_STATE_START	= 2'b01;
+parameter TX_STATE_DATA	= 2'b10;
+parameter TX_STATE_STOP	= 2'b11;
+
+reg [7:0] data = 8'h00; //set an 8-bit register/vector as data,initially equal to 00000000
+reg [2:0] bit_pos = 3'h0; //bit position is a 3-bit register/vector, initially equal to 000
+reg [1:0] state = TX_STATE_IDLE; //state is a 2 bit register/vector,initially equal to 00
+
+always @(posedge clk_50m) begin
+	case (state) //Let us consider the 4 states of the transmitter
+	TX_STATE_IDLE: begin //We define the conditions for idle  or NOT-BUSY state
+		if (~wr_en) begin
+			state <= TX_STATE_START; //assign the start signal to state
+			data <= data_in; //we assign input data vector to the current data 
+			bit_pos <= 3'h0; //we assign the bit position to zero
+		end
+	end
+	TX_STATE_START: begin //We define the conditions for the transmission start state
+		if (clken) begin
+			Tx <= 1'b0; //set Tx = 0 indicating transmission has started
+			state <= TX_STATE_DATA;
+		end
+	end
+	TX_STATE_DATA: begin
+		if (clken) begin
+			if (bit_pos == 3'h7) //we keep assigning Tx with the data until all bits have been transmitted from 0 to 7
+				state <= TX_STATE_STOP; // when bit position has finally reached 7, assign state to stop transmission
+			else
+				bit_pos <= bit_pos + 3'h1; //increment the bit position by 001
+			Tx <= data[bit_pos]; //Set Tx to the data value of the bit position ranging from 0-7
+		end
+	end
+	TX_STATE_STOP: begin
+		if (clken) begin
+			Tx <= 1'b1; //set Tx = 1 after transmission has ended
+			state <= TX_STATE_IDLE; //Move to IDLE state once a transmission has been completed
+		end
+	end
+	default: begin
+		Tx <= 1'b1; // always begin with Tx = 1 and state assigned to IDLE
+		state <= TX_STATE_IDLE;
+	end
+	endcase
+end
+
+assign Tx_busy = (state != TX_STATE_IDLE); //We assign the BUSY signal when the transmitter is not idle
+
+endmodule
