@@ -173,15 +173,6 @@ By following these steps, you can successfully simulate, implement, and test the
 
 For further clarifications, you can refer to the provided "Step by Step Implementation.docx" (https://github.com/LasiduDilshan/UART-using-Verilog/blob/main/Step%20by%20Step%20Implementation.docx).
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request with any improvements or bug fixes. Your contributions will help enhance the functionality and reliability of the UART communication system.
-
-
 ## Contact
 
 For any questions or suggestions, please contact dilshanlasindu0@gmail.com.
